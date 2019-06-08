@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './assets/css/index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
+import 'primereact/resources/themes/rhea/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
