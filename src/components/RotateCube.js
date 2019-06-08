@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import * as THREE from 'three'
 import { Canvas } from 'react-three-fiber'
-import {im} from '../assets/common/img'
+import { im } from '../assets/common/img'
 import useInterval from './CustomInterval'
 
 function Thing(props) {
-
     const [x, setX] = useState(0);
     const [y, setY] = useState(0);
 
@@ -31,11 +30,9 @@ function Thing(props) {
 function RotateCube(props) {
     return (
         <React.Fragment>
-            <div style={{ height: "10rem", width: "10rem", backgroundColor: "lightgray" }}>
-                <Canvas>
-                    <Thing img = {props.img}/>
-                </Canvas>
-            </div>
+            <Canvas>
+                <Thing img={props.img} />
+            </Canvas>
         </React.Fragment>
     )
 }
