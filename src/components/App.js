@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/css/App.css';
+import Home from '../pages/HomePage'
 
 function App() {
   return (
@@ -7,6 +8,9 @@ function App() {
       <header className="App-header">
         Hello!
       </header>
+      <main className = "App-main">
+        <Home />
+      </main>
     </div>
   );
 }
