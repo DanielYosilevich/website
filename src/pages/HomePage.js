@@ -1,9 +1,13 @@
 import React from 'react';
 import RotateCube from '../components/RotateCube'
+import FileReader from '../components/FileReader'
 import { Accordion, AccordionTab } from 'primereact/accordion';
 import { TabView, TabPanel } from 'primereact/tabview';
+import cv from '../assets/common/files/CV.pdf'
 
 function Home() {
+    const file = cv
+    const type = 'pdf'
     return (
         <React.Fragment>
             <TabView>
@@ -13,7 +17,7 @@ function Home() {
                 <TabPanel header="Portfolio">
                     <Accordion multiple={true}>
                         <AccordionTab header="Fragmentos (React)">
-                            <div style={{ height: "10rem", width: "10rem", backgroundColor: "lightgray" }}>
+                            <div style={{ height: "10rem", width: "10rem", backgroundColor: "darkgray" }}>
                                 <RotateCube img="React" />
                             </div>
                         </AccordionTab>
@@ -28,6 +32,9 @@ function Home() {
                             </div>
                         </AccordionTab>
                     </Accordion>
+                </TabPanel>
+                <TabPanel header="CV">
+                    <FileReader />
                 </TabPanel>
             </TabView>
         </React.Fragment>
