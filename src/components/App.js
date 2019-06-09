@@ -9,16 +9,15 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <Logo /> */}
-        <div className="logo" style={{
-          height: "10rem",
-          width: "100%",
-          background: `url(${yozhik})`,
-          // backgroundRepeat: "no-repeat",
-          backgroundSize: "contain",
-          textAlign: "center"
-        }}>
-          <span> Welcome to My Site </span>
-        </div>
+        {/* <div style = {{display:"flex", justifyContent:"center"}}> */}
+        {/* <div className="logo" > */}
+          {/* <img
+            style={{  objectFit: 'contain' }}
+            src={yozhik} */}
+          {/* /> */}
+          {/* <span> Welcome to My Site </span> */}
+        {/* </div> */}
+        {/* </div> */}
       </header>
       <main>
         <Home />

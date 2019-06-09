@@ -1,33 +1,47 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { PDFReader } from 'react-read-pdf'
 import cv from '../assets/common/files/CV.pdf'
 
 function FileReader() {
+    const [w, setW] = useState(window.innerWidth);
+    let refW = useRef(w);
+    useEffect(() => {
+        refW.current = w;
+    });
 
-    const [listener,setListener] = useState(false);
-    const [w, setW] = useState(window.innerWidth)
-    const [flag, setFlag] = useState(true)
+    const [flag, setFlag] = useState(false)
+    let refFlag = useRef(flag);
     useEffect(() => {
-        if(listener) setFlag(!flag);
-        setListener(false);
-    }, [w])
+        refFlag.current = flag;
+    });
+
     useEffect(() => {
+        var ignore = false
+        const handler = () => {
+            if (ignore) return
+            ignore = true;
+            setTimeout(function () {
+                setFlag(() => !refFlag.current)
+                if (refW.current !== window.innerWidth) {
+                    setW(window.innerWidth);
+                }
+                ignore = false;
+            }, 500);
+        }
+
         window.addEventListener('resize', handler);
+        console.log('start')
         // this will clean up the event every time the component is re-rendered
         return function cleanup() {
             window.removeEventListener('resize', handler);
+            console.log('clean')
         }
     }, [])
 
-    const handler = () => {
-        setListener(true);
-        setW(window.innerWidth);
-    }
-
     return (
         <div>
-            {flag && <PDFReader url={cv} width={w}/>}
-            {!flag && <PDFReader url={cv} width={w}/>}
+            {flag && <PDFReader url={cv} width={w} />}
+            {!flag && <PDFReader url={cv} width={w} />}
         </div>
     )
 }

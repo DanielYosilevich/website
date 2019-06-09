@@ -6,8 +6,6 @@ import { TabView, TabPanel } from 'primereact/tabview';
 import cv from '../assets/common/files/CV.pdf'
 
 function Home() {
-    const file = cv
-    const type = 'pdf'
     return (
         <React.Fragment>
             <TabView>
