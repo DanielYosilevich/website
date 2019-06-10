@@ -30,18 +30,16 @@ function FileReader() {
         }
 
         window.addEventListener('resize', handler);
-        console.log('start')
         // this will clean up the event every time the component is re-rendered
         return function cleanup() {
             window.removeEventListener('resize', handler);
-            console.log('clean')
         }
     }, [])
 
     return (
         <div>
-            {flag && <PDFReader url={cv} width={w} />}
-            {!flag && <PDFReader url={cv} width={w} />}
+            {flag && <PDFReader url={cv} width={w-36} />}
+            {!flag && <PDFReader url={cv} width={w-36} />}
         </div>
     )
 }
