@@ -20,7 +20,7 @@ function FileReader() {
         const handler = () => {
             if (ignore) return
             ignore = true;
-            setTimeout(function () {
+            setTimeout(() => {
                 setFlag(() => !refFlag.current)
                 if (refW.current !== window.innerWidth) {
                     setW(window.innerWidth);

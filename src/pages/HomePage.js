@@ -32,6 +32,9 @@ function Home() {
                     </Accordion>
                 </TabPanel>
                 <TabPanel header="CV">
+                    <span>
+                        <a href={`${cv}`} type="application/pdf" download='DanielYosilevich_CV.pdf'>Download</a>
+                    </span>
                     <FileReader />
                 </TabPanel>
             </TabView>
