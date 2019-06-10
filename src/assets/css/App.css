@@ -35,13 +35,23 @@
   justify-content: center;
   align-items: center;
   margin-left: 1rem;
-  box-shadow: 3px 4px 5px 4px #888888
+  box-shadow: 3px 4px 5px 4px #888888;
 }
 
 .accordion-info-container a span{
   font-weight: bold;
   text-decoration: underline;
 }
+
+@media (max-width: 320px) {
+  .accordion-tab-container{
+   flex-direction:column
+  }
+  .accordion-info-container{
+   margin: 1rem 0 0 0;
+  }
+}
+
 /* PrimeReact components fixups*/
 
 .p-panel-content{
@@ -54,8 +64,10 @@
 }
 
 .p-accordion-content .rotating-cube{
-  min-height: 10rem;
-  min-width: 10rem;
+  height: 10rem;
+  width: 10rem;
+  min-width: 9rem;
+  min-height: 9rem;
   background-color: rgb(123, 149, 163);
   box-shadow: 3px 4px 5px 4px #888888;
 }
