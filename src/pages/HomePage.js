@@ -69,7 +69,7 @@ function Home() {
                     </Accordion>
                 </TabPanel>
                 <TabPanel header="CV">
-                    <span style={{ fontWeight: "b old" }}>
+                    <span style={{ fontWeight: "bold" }}>
                         <a
                             href={cv}
                             type="application/pdf"
