@@ -38,8 +38,17 @@ function FileReader() {
 
     return (
         <div>
-            {flag && <PDFReader url={cv} width={w-36} />}
-            {!flag && <PDFReader url={cv} width={w-36} />}
+            <span style={{ fontWeight: "bold" }}>
+                <a
+                    href={cv}
+                    type="application/pdf"
+                    download='DanielYosilevich_CV.pdf'
+                >
+                    Download
+                </a>
+            </span>
+            {flag && <PDFReader url={cv} width={w - 36} />}
+            {!flag && <PDFReader url={cv} width={w - 36} />}
         </div>
     )
 }

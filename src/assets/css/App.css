@@ -1,3 +1,27 @@
+/* helpers */
+
+.flex {
+  display: flex
+}
+
+.justify-start {
+  justify-content:start
+}
+
+.justify-center {
+  justify-content: center
+}
+
+.align-start {
+  align-items: start
+}
+
+.align-center {
+  align-items: center
+}
+
+
+
 /* header */
 
 .App-header {
@@ -19,6 +43,39 @@
   font-size: 1.5rem;
   text-shadow: 2px 2px 5px black;
   color: white
+}
+
+/* Personal Details */
+
+.details-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.details-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem
+}
+
+.card-container {
+  margin: 0 0 0 2rem;
+  box-shadow: 3px 4px 5px 4px #888888
+}
+
+@media (max-width: 600px) {
+  .details-wrapper {
+    justify-content: center;
+    align-items: center
+  }
+  .details-container{
+    flex-direction:column
+  }
+  .card-container {
+    margin: 1rem 0 0 0
+  }
 }
 
 /* Accordion */
