@@ -7,7 +7,6 @@ import { TabView, TabPanel } from 'primereact/tabview'
 function Home() {
     return (
         <React.Fragment>
-            {/* <div style ={{height:"90vh",backgroundColor:"olive"}}> */}
                 <TabView>
                     <TabPanel header="About me">
                         <PersonalDetails />
@@ -19,7 +18,6 @@ function Home() {
                         <FileReader />
                     </TabPanel>
                 </TabView>
-            {/* </div> */}
         </React.Fragment>
     )
 }
