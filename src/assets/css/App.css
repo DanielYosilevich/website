@@ -47,12 +47,11 @@
 
 .details-wrapper {
   display: flex;
-  /* justify-content: flex-start;
-  align-items: flex-start; */
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  height: 80vh
+  /* height: 80vh */
+  flex-grow: 1
 }
 
 .details-container {
@@ -68,7 +67,6 @@
 
 @media (max-width: 600px) {
   .details-wrapper {
-    margin-top: 2rem;
     justify-content: center;
     align-items: center
   }
