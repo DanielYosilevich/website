@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { PDFReader } from 'react-read-pdf'
-import cv from '../assets/common/files/CV.pdf'
+import cv from '../assets/common/files/cv.pdf'
 
 function FileReader() {
     const [w, setW] = useState(window.innerWidth);
