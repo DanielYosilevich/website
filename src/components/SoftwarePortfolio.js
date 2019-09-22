@@ -13,7 +13,7 @@ function SoftwarePortfolio() {
                     </div>
                     <div className="accordion-info-container">
                         <Panel>
-                            <a href="https://diosile-r1.herokuapp.com/">
+                            <a href="https://diosile-r1.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                 <span> Fragmentos:</span>
                             </a>
                             &nbsp; A personal code repository. Written with React, NodeJS,
@@ -29,7 +29,7 @@ function SoftwarePortfolio() {
                     </div>
                     <div className="accordion-info-container">
                         <Panel>
-                            <a href="https://diosile-sprint4.herokuapp.com/">
+                            <a href="https://diosile-sprint4.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                 <span> Cajan19:</span>
                             </a>
                             &nbsp; Image sharing social site application a la
@@ -45,7 +45,7 @@ function SoftwarePortfolio() {
                     </div>
                     <div className="accordion-info-container">
                         <Panel>
-                            <a href="https://diosile-a1.herokuapp.com/">
+                            <a href="https://diosile-a1.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                 <span> World Map:</span>
                             </a>
                             &nbsp; Interactive World Map with an option to query
@@ -64,7 +64,7 @@ function SoftwarePortfolio() {
                     </div>
                     <div className="accordion-info-container">
                         <Panel>
-                            <a href="https://linguarum.azurewebsites.net/">
+                            <a href="https://linguarum.azurewebsites.net/" target="_blank" rel="noopener noreferrer">
                                 <span> Linguarum:</span>
                             </a>
                             &nbsp; Application for studying eastern languages. Written with React, NodeJS,
@@ -80,7 +80,7 @@ function SoftwarePortfolio() {
                     </div>
                     <div className="accordion-info-container">
                         <Panel>
-                            <a href="https://fastsimon-challenge2.appspot.com/">
+                            <a href="https://fastsimon-challenge2.appspot.com/" target="_blank" rel="noopener noreferrer">
                                 <span> Simple Database:</span>
                             </a>
                             &nbsp; Simple database implementation with Google App Engine.
