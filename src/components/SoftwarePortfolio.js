@@ -89,6 +89,22 @@ function SoftwarePortfolio() {
                     </div>
                 </div>
             </AccordionTab>
+            <AccordionTab header="&nbsp; Simple Social Site (Laravel)">
+                <div className="accordion-tab-container">
+                    <div className="rotating-cube">
+                        <RotateCube img="Laravel" />
+                    </div>
+                    <div className="accordion-info-container">
+                        <Panel>
+                            <a href="https://diosile-l3.azurewebsites.net/" target="_blank" rel="noopener noreferrer">
+                                <span> Simple Social Network imitation:</span>
+                            </a>
+                            &nbsp; Basic implementation of social network.
+                            Made with Laravel and mySQL.
+                        </Panel>
+                    </div>
+                </div>
+            </AccordionTab>
         </Accordion>
     )
 }
