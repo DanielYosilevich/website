@@ -14,9 +14,9 @@ function Home() {
                     <TabPanel header="Portfolio">
                         <SoftwarePortfolio />
                     </TabPanel>
-                    <TabPanel header="CV">
+                    {/* <TabPanel header="CV">
                         <FileReader />
-                    </TabPanel>
+                    </TabPanel> */}
                 </TabView>
         </React.Fragment>
     )
